@@ -1,0 +1,350 @@
+{
+  "name": "START",
+  "type": "SEQUENCE",
+  "children": [
+    {
+      "name": "WakeUp",
+      "type": "SCENE",
+      "sceneName": "WakeUp"
+    },
+    {
+      "name": "JessJess",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_JessJess",
+      "startDelay": "0",
+      "looping": false,
+      "subtitles": "Jess!...Jess!... can you hear me? If you can hear me please respond! Are you okay? Hello!",
+      "character": "Nick"
+    },
+    {
+      "name": "ManicBreath",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_ManicBreath",
+      "startDelay": "1",
+      "looping": false,
+      "subtitles": "",
+      "character": "Jess"
+    },
+    {
+      "name": "WakeUpSel",
+      "type": "SELECTOR",
+      "children": [
+        {
+          "name": "WakeUpIfSeq",
+          "type": "SEQUENCE",
+          "children": [
+            {
+              "name": "WakeUpAnswered?",
+              "type": "CONDITION",
+              "condition": "Wake Up?",
+              "isDialogueCondition": true
+            },
+            {
+              "name": "WhatsThatAnsSuccess",
+              "type": "SEQUENCE",
+              "children": [
+                {
+                  "name": "WakeUpOption1Sel",
+                  "type": "SELECTOR",
+                  "children": [
+                    {
+                      "name": "WakeUpOption1Seq",
+                      "type": "SEQUENCE",
+                      "children": [
+                        {
+                          "name": "WakeUpOption1",
+                          "type": "CONDITION",
+                          "condition": "Ugh",
+                          "isDialogueCondition": true,
+                          "isAgitated": true
+                        },
+                        {
+                          "name": "Ugh",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_Ugh",
+                          "startDelay": "0",
+                          "looping": false,
+                          "subtitles": "Ugh...",
+                          "character": "Jess"
+                        },
+                        {
+                          "name": "SnapOut",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_SnapOut",
+                          "startDelay": "0",
+                          "looping": false,
+                          "subtitles": "Snap out of it!",
+                          "character": "Nick"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "WakeUpOption2Sel",
+                  "type": "SELECTOR",
+                  "children": [
+                    {
+                      "name": "WakeUpOption2Seq",
+                      "type": "SEQUENCE",
+                      "children": [
+                        {
+                          "name": "WakeUpOption2",
+                          "type": "CONDITION",
+                          "condition": "Im Fine",
+                          "isDialogueCondition": true,
+                          "isAgitated": false
+                        },
+                        {
+                          "name": "ImFine",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_ImFine",
+                          "startDelay": "0",
+                          "looping": false,
+                          "subtitles": "I’m fine. Are you okay?",
+                          "character": "Jess"
+                        },
+                        {
+                          "name": "NotExactly",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_NotExactly",
+                          "startDelay": "0",
+                          "looping": false,
+                          "subtitles": " Yeah…. well, not exactly",
+                          "character": "Nick"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "WakeUpOption3Sel",
+                  "type": "SELECTOR",
+                  "children": [
+                    {
+                      "name": "WakeUpOption3Seq",
+                      "type": "SEQUENCE",
+                      "children": [
+                        {
+                          "name": "WakeUpOption3",
+                          "type": "CONDITION",
+                          "condition": "Wake Up Say Nothing",
+                          "isDialogueCondition": true,
+                          "isAgitated": true
+                        },
+                        {
+                          "name": "SnapOut",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_SnapOut",
+                          "startDelay": "3",
+                          "looping": false,
+                          "subtitles": "Snap out of it!",
+                          "character": "Nick"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "NotSure",
+                  "type": "DIALOGUE",
+                  "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_NotSure",
+                  "startDelay": "3",
+                  "looping": false,
+                  "subtitles": "I’m not sure where I am. I can’t stop spinning, and I can barely make out what’s left from the station.",
+                  "character": "Nick"
+                },
+                {
+                  "name": "WhatHappened",
+                  "type": "DIALOGUE",
+                  "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_WhatHappened",
+                  "startDelay": "1",
+                  "looping": false,
+                  "subtitles": "What happened? How long was I out?",
+                  "character": "Jess"
+                },
+                {
+                  "name": "TheStationWasHit",
+                  "type": "DIALOGUE",
+                  "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_TheStationWasHit",
+                  "startDelay": "1",
+                  "looping": false,
+                  "subtitles": "The station was hit by some sort of debris. You’ve been out for while. Long enough to where we are both pretty low on oxygen.",
+                  "character": "Jess"
+                },
+                {
+                  "name": "GoodComeGetMe",
+                  "type": "DIALOGUE",
+                  "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_GoodComeGetMe",
+                  "startDelay": "1",
+                  "looping": false,
+                  "subtitles": "Jess, you need to come get me. I’ve still got the tether. Do you see the escape pod? Is it still intact? If you head this way now, we should be able to make it in time.",
+                  "character": "Nick"
+                },
+                {
+                  "name": "LookForItTogether",
+                  "type": "DIALOGUE",
+                  "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_LookForItTogether",
+                  "startDelay": "1",
+                  "looping": false,
+                  "subtitles": "Okay, let me look for it.",
+                  "character": "Jess"
+                },
+                {
+                  "name": "SeeEscapePod",
+                  "type": "SELECTOR",
+                  "children": [
+                    {
+                      "name": "SeeEscapePodIfSeq",
+                      "type": "SEQUENCE",
+                      "children": [
+                        {
+                          "name": "SeeEscapePod?",
+                          "type": "CONDITION",
+                          "condition": "Escape Pod?",
+                          "isDialogueCondition": true
+                        },
+                        {
+                          "name": "SeeEscapeSuccess",
+                          "type": "SEQUENCE",
+                          "children": [
+                            {
+                              "name": "SeeEscapePodOption1",
+                              "type": "SELECTOR",
+                              "children": [
+                                {
+                                  "name": "SeeEscapePodOption1Seq",
+                                  "type": "SEQUENCE",
+                                  "children": [
+                                    {
+                                      "name": "SeeEscapePodOption1",
+                                      "type": "CONDITION",
+                                      "condition": "I See It",
+                                      "isDialogueCondition": true,
+                                      "isAgitated": false
+                                    },
+                                    {
+                                      "name": "ISeeIt",
+                                      "type": "DIALOGUE",
+                                      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_ISeeIt",
+                                      "startDelay": "0",
+                                      "looping": false,
+                                      "subtitles": "I see it. It looks like it’s still operable, but I can only see so much from here.",
+                                      "character": "Jess"
+                                    },
+                                    {
+                                      "name": "GoodComeGetMe",
+                                      "type": "DIALOGUE",
+                                      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_GoodComeGetMe",
+                                      "startDelay": "0",
+                                      "looping": false,
+                                      "subtitles": "Alright, good. Come and get me.",
+                                      "character": "Nick"
+                                    },
+                                    {
+                                      "name": "GoToCalmJSON",
+                                      "type": "SEQUENCE"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "SeeEscapePodOption2",
+                              "type": "SELECTOR",
+                              "children": [
+                                {
+                                  "name": "SeeEscapePodOption2Seq",
+                                  "type": "SEQUENCE",
+                                  "children": [
+                                    {
+                                      "name": "SeeEscapePodOption2",
+                                      "type": "CONDITION",
+                                      "condition": "Dont See It",
+                                      "isDialogueCondition": true,
+                                      "isAgitated": true
+                                    },
+                                    {
+                                      "name": "DontSeeIt",
+                                      "type": "DIALOGUE",
+                                      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_DontSeeIt",
+                                      "startDelay": "0",
+                                      "looping": false,
+                                      "subtitles": "I don’t see it. I’ll have to keep looking.",
+                                      "character": "Nick"
+                                    },
+                                    {
+                                      "name": "QuitScrewingAround",
+                                      "type": "DIALOGUE",
+                                      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_QuitScrewingAround",
+                                      "startDelay": "0",
+                                      "looping": false,
+                                      "subtitles": "Well quit screwing around and go find it!",
+                                      "character": "Nick"
+                                    },
+                                    {
+                                      "name": "GoToAgitationJSON",
+                                      "type": "SEQUENCE"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "SeeEscapePodOption3",
+                              "type": "SELECTOR",
+                              "children": [
+                                {
+                                  "name": "SeeEscapePodOption3Seq",
+                                  "type": "SEQUENCE",
+                                  "children": [
+                                    {
+                                      "name": "SeeEscapePodOption3",
+                                      "type": "CONDITION",
+                                      "condition": "Escape Pod Say Nothing",
+                                      "isDialogueCondition": true,
+                                      "isAgitated": true
+                                    },
+                                    {
+                                      "name": "QuitScrewingAround",
+                                      "type": "DIALOGUE",
+                                      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_QuitScrewingAround",
+                                      "startDelay": "3",
+                                      "looping": false,
+                                      "subtitles": "Well quit screwing around and go find it!",
+                                      "character": "Nick"
+                                    },
+                                    {
+                                      "name": "GoToAgitationJSON",
+                                      "type": "SEQUENCE"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "SeeEscapePodOptions",
+                      "type": "OPTIONS",
+                      "options": [ "I see it. It looks like it’s still operable, but I can only see so much from here.", "I don’t see it. I’ll have to keep looking.", " (say nothing)", "" ],
+                      "successConditions": [ "I See It", "Dont See It", "Escape Pod Say Nothing", "" ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "WakeUpOptions",
+          "type": "OPTIONS",
+          "options": [ "Ugh...", "I’m fine. Are you okay?", "(say nothing)", "" ],
+          "successConditions": [ "Ugh", "Im Fine", "Wake Up Say Nothing", "" ]
+        }
+      ]
+    }
+  ]
+}

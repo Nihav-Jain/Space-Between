@@ -1,0 +1,410 @@
+{
+  "name": "START",
+  "type": "SEQUENCE",
+  "children": [
+    {
+      "name": "Calm",
+      "type": "SCENE",
+      "sceneName": "Calm"
+    },
+    {
+      "name": "CalmOptionsSel",
+      "type": "SELECTOR",
+      "children": [
+        {
+          "name": "CalmOptionsIfSeq",
+          "type": "SEQUENCE",
+          "children": [
+            {
+              "name": "CalmOptionsAnswered?",
+              "type": "CONDITION",
+              "condition": "Calm Answered?",
+              "isDialogueCondition": false,
+              "isAgitated": false
+            },
+            {
+              "name": "CalmOptionsAnsSuccess",
+              "type": "SEQUENCE",
+              "children": [
+                {
+                  "name": "CalmOption1Sel",
+                  "type": "SELECTOR",
+                  "children": [
+                    {
+                      "name": "CalmOption1Seq",
+                      "type": "SEQUENCE",
+                      "children": [
+                        {
+                          "name": "CalmOption1",
+                          "type": "CONDITION",
+                          "condition": "On My Way",
+                          "isDialogueCondition": false,
+                          "isAgitated": false
+                        },
+                        {
+                          "name": "OnMyWay",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_OnMyWay",
+                          "startDelay": "0",
+                          "looping": false,
+                          "subtitles": "On my way.",
+                          "character": "Jess"
+                        },
+                        {
+                          "name": "NotGoingAnywhere",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_NotGoingAnywhere",
+                          "startDelay": "0",
+                          "looping": false,
+                          "subtitles": "[laughs nervously] Well it’s not like I’m going anywhere.",
+                          "character": "Nick"
+                        },
+                        {
+                          "name": "LimitRadio",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_LimitRadio",
+                          "startDelay": "3",
+                          "looping": false,
+                          "subtitles": "Alright, Let’s limit radio communication to preserve oxygen.",
+                          "character": "Jess"
+                        },
+                        {
+                          "name": "RogerThat",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_RogerThat",
+                          "startDelay": "0",
+                          "looping": false,
+                          "subtitles": "Roger that.",
+                          "character": "Nick"
+                        },
+                        {
+                          "name": "GoToRescueAttemptJSON",
+                          "type": "SEQUENCE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "CalmOption2Sel",
+                  "type": "SELECTOR",
+                  "children": [
+                    {
+                      "name": "CalmOption2Seq",
+                      "type": "SEQUENCE",
+                      "children": [
+                        {
+                          "name": "CalmOption2",
+                          "type": "CONDITION",
+                          "condition": "Lots Of Debris",
+                          "isDialogueCondition": false,
+                          "isAgitated": false
+                        },
+                        {
+                          "name": "LotOfDebris",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_LotOfDebris",
+                          "startDelay": "0",
+                          "looping": false,
+                          "subtitles": "Nick... There’s a lot of debris…",
+                          "character": "Jess"
+                        },
+                        {
+                          "name": "TalkYouThroughIt",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_TalkYouThroughIt",
+                          "startDelay": "0",
+                          "looping": false,
+                          "subtitles": " I can talk you through it.",
+                          "character": "Nick"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "CalmOption3Sel",
+                  "type": "SELECTOR",
+                  "children": [
+                    {
+                      "name": "CalmOption3Seq",
+                      "type": "SEQUENCE",
+                      "children": [
+                        {
+                          "name": "CalmOption3",
+                          "type": "CONDITION",
+                          "condition": "Calm Say Nothing",
+                          "isDialogueCondition": false,
+                          "isAgitated": false
+                        },
+                        {
+                          "name": "DoYouReadMe",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_DoYouReadMe",
+                          "startDelay": "3",
+                          "looping": false,
+                          "subtitles": "Hello? Jess? Do you read me?",
+                          "character": "Nick"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "NotRescuingSeq",
+                  "type": "SEQUENCE",
+                  "children": [
+                    {
+                      "name": "NotRescuingSel",
+                      "type": "SELECTOR",
+                      "children": [
+                        {
+                          "name": "NotRescuingIfSeq",
+                          "type": "SEQUENCE",
+                          "children": [
+                            {
+                              "name": "NotRescuingAnswered?",
+                              "type": "CONDITION",
+                              "condition": "Not Rescuing?",
+                              "isDialogueCondition": false,
+                              "isAgitated": false
+                            },
+                            {
+                              "name": "NotRescuingAnsSuccess",
+                              "type": "SEQUENCE",
+                              "children": [
+                                {
+                                  "name": "NotRescuingOption1Sel",
+                                  "type": "SELECTOR",
+                                  "children": [
+                                    {
+                                      "name": "NotRescuingOption1Seq",
+                                      "type": "SEQUENCE",
+                                      "children": [
+                                        {
+                                          "name": "NotRescuingOption1",
+                                          "type": "CONDITION",
+                                          "condition": "On My Way Again",
+                                          "isDialogueCondition": false,
+                                          "isAgitated": false
+                                        },
+                                        {
+                                          "name": "OnMyWay",
+                                          "type": "DIALOGUE",
+                                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_OnMyWay",
+                                          "startDelay": "0",
+                                          "looping": false,
+                                          "subtitles": "On my way.",
+                                          "character": "Jess"
+                                        },
+                                        {
+                                          "name": "NotGoingAnywhere",
+                                          "type": "DIALOGUE",
+                                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_NotGoingAnywhere",
+                                          "startDelay": "0",
+                                          "looping": false,
+                                          "subtitles": "[laughs nervously] Well it’s not like I’m going anywhere.",
+                                          "character": "Nick"
+                                        },
+                                        {
+                                          "name": "LimitRadio",
+                                          "type": "DIALOGUE",
+                                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_LimitRadio",
+                                          "startDelay": "0",
+                                          "looping": false,
+                                          "subtitles": "Alright, Let’s limit radio communication to preserve oxygen.",
+                                          "character": "Jess"
+                                        },
+                                        {
+                                          "name": "RogerThat",
+                                          "type": "DIALOGUE",
+                                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_RogerThat",
+                                          "startDelay": "0",
+                                          "looping": false,
+                                          "subtitles": "Roger that.",
+                                          "character": "Nick"
+                                        },
+                                        {
+                                          "name": "GoToRescueAttemptJSON",
+                                          "type": "SEQUENCE"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "NotRescuingOption2Sel",
+                                  "type": "SELECTOR",
+                                  "children": [
+                                    {
+                                      "name": "NotRescuingOption2Seq",
+                                      "type": "SEQUENCE",
+                                      "children": [
+                                        {
+                                          "name": "NotRescuingOption2",
+                                          "type": "CONDITION",
+                                          "condition": "Not Rescuing Say Nothing",
+                                          "isDialogueCondition": false,
+                                          "isAgitated": true
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "JustGonnaLetMeDie",
+                                  "type": "DIALOGUE",
+                                  "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_JustGonnaLetMeDie",
+                                  "startDelay": "3",
+                                  "looping": false,
+                                  "subtitles": "Are you just gonna let me die here?",
+                                  "character": "Nick",
+                                  "children": [
+                                    {
+                                      "name": "JustGonnaLetMeDieSeq",
+                                      "type": "SEQUENCE",
+                                      "children": [
+                                        {
+                                          "name": "JustGonnaLetMeDieIfSeq",
+                                          "type": "SEQUENCE",
+                                          "children": [
+                                            {
+                                              "name": "JustGonnaLetMeAns?",
+                                              "type": "CONDITION",
+                                              "condition": "Let Me Die Answered?",
+                                              "isDialogueCondition": false,
+                                              "isAgitated": false
+                                            },
+                                            {
+                                              "name": "JustGonnaLetMeAnsSuccess",
+                                              "type": "SEQUENCE",
+                                              "children": [
+                                                {
+                                                  "name": "JustGonnaLetMeOption1",
+                                                  "type": "SELECTOR",
+                                                  "children": [
+                                                    {
+                                                      "name": "JustGonnaLetMeOption1Seq",
+                                                      "type": "SEQUENCE",
+                                                      "children": [
+                                                        {
+                                                          "name": "JustGonnaLetMeDieOption1",
+                                                          "type": "CONDITION",
+                                                          "condition": "Im Sorry",
+                                                          "isDialogueCondition": false,
+                                                          "isAgitated": false
+                                                        },
+                                                        {
+                                                          "name": "ImSorry",
+                                                          "type": "DIALOGUE",
+                                                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_ImSorry",
+                                                          "startDelay": "0",
+                                                          "looping": false,
+                                                          "subtitles": "I'm sorry...",
+                                                          "character": "Jess"
+                                                        },
+                                                        {
+                                                          "name": "GoToAbandonment",
+                                                          "type": "SEQUENCE"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "name": "JustGonnaLetMeOption2",
+                                                  "type": "SELECTOR",
+                                                  "children": [
+                                                    {
+                                                      "name": "JustGonnaLetMeOption2Seq",
+                                                      "type": "SEQUENCE",
+                                                      "children": [
+                                                        {
+                                                          "name": "JustGonnaLetMeDieOption2",
+                                                          "type": "CONDITION",
+                                                          "condition": "My Equipment Is",
+                                                          "isDialogueCondition": false,
+                                                          "isAgitated": false
+                                                        },
+                                                        {
+                                                          "name": "LoseContact",
+                                                          "type": "DIALOGUE",
+                                                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_LoseContact",
+                                                          "startDelay": "0",
+                                                          "looping": false,
+                                                          "subtitles": "My equipment is- Have to- I promise I’ll- [turns off radio]",
+                                                          "character": "Jess"
+                                                        },
+                                                        {
+                                                          "name": "EndAllDialogue",
+                                                          "type": "SEQUENCE"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "name": "JustGonnaLetMeOption3",
+                                                  "type": "SELECTOR",
+                                                  "children": [
+                                                    {
+                                                      "name": "JustGonnaLetMeOption3Seq",
+                                                      "type": "SEQUENCE",
+                                                      "children": [
+                                                        {
+                                                          "name": "JustGonnaLetMeDieOption3",
+                                                          "type": "CONDITION",
+                                                          "condition": " public static string LetMeDie_Option3 = \"Let Me Die Say Nothing\";",
+                                                          "isDialogueCondition": false,
+                                                          "isAgitated": false
+                                                        },
+                                                        {
+                                                          "name": "GoToAbandonment",
+                                                          "type": "SEQUENCE"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "JustGonnaLetMeDieOptions",
+                                          "type": "OPTIONS",
+                                          "options": [ "I'm sorry...", "My equipment is- Have to- I promise I’ll- [turns off radio]", "(say nothing)", "" ],
+                                          "successConditions": [ "Im Sorry", "My Equipment Is", "Let Me Die Say Nothing", "" ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "NotRescuingOptions",
+                          "type": "OPTIONS",
+                          "options": [ "On my way.", "(say nothing)", "" ],
+                          "successConditions": [ "On My Way Again", "Not Rescuing Say Nothing", "" ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CalmOptions",
+          "type": "OPTIONS",
+          "options": [ "On my way.", "Nick... There’s a lot of debris…", "(say nothing)", "" ],
+          "successConditions": [ "On My Way", "Lots Of Debris", "Calm Say Nothing", "" ]
+        }
+      ]
+    }
+  ]
+}

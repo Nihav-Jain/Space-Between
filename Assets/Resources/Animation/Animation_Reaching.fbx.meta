@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 7f30b0a4b5ab19a4eb850fba193154ff
+timeCreated: 1444256489
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Astro_Mesh
+    100004: chest
+    100006: Clavicle
+    100008: joint13
+    100010: joint14
+    100012: joint16
+    100014: joint17
+    100016: joint23
+    100018: joint24
+    100020: joint26
+    100022: joint27
+    100024: joint29
+    100026: joint30
+    100028: joint47
+    100030: joint48
+    100032: joint50
+    100034: joint51
+    100036: joint53
+    100038: joint54
+    100040: joint56
+    100042: joint57
+    100044: joint59
+    100046: joint60
+    100048: joint61
+    100050: joint62
+    100052: joint63
+    100054: joint64
+    100056: L_Ankle
+    100058: L_ball
+    100060: L_Elbow
+    100062: L_HIp
+    100064: L_Knee
+    100066: L_Mid
+    100068: L_Pinky
+    100070: L_Point
+    100072: L_Ring
+    100074: L_Shoulder
+    100076: L_thigh
+    100078: L_Thumb
+    100080: L_toe
+    100082: L_Wrist
+    100084: locator4
+    100086: nurbsCircle4
+    100088: R_Ball
+    100090: R_Heel
+    100092: R_hip
+    100094: R_Knee
+    100096: R_Mid
+    100098: R_Pinky
+    100100: R_Point
+    100102: R_Ring
+    100104: R_Shoulder
+    100106: R_shoulder
+    100108: R_Thigh
+    100110: R_Thumb
+    100112: R_Toe
+    100114: R_wrist
+    100116: Root
+    100118: Stomach
+    100120: transform3
+    400000: //RootNode
+    400002: Astro_Mesh
+    400004: chest
+    400006: Clavicle
+    400008: joint13
+    400010: joint14
+    400012: joint16
+    400014: joint17
+    400016: joint23
+    400018: joint24
+    400020: joint26
+    400022: joint27
+    400024: joint29
+    400026: joint30
+    400028: joint47
+    400030: joint48
+    400032: joint50
+    400034: joint51
+    400036: joint53
+    400038: joint54
+    400040: joint56
+    400042: joint57
+    400044: joint59
+    400046: joint60
+    400048: joint61
+    400050: joint62
+    400052: joint63
+    400054: joint64
+    400056: L_Ankle
+    400058: L_ball
+    400060: L_Elbow
+    400062: L_HIp
+    400064: L_Knee
+    400066: L_Mid
+    400068: L_Pinky
+    400070: L_Point
+    400072: L_Ring
+    400074: L_Shoulder
+    400076: L_thigh
+    400078: L_Thumb
+    400080: L_toe
+    400082: L_Wrist
+    400084: locator4
+    400086: nurbsCircle4
+    400088: R_Ball
+    400090: R_Heel
+    400092: R_hip
+    400094: R_Knee
+    400096: R_Mid
+    400098: R_Pinky
+    400100: R_Point
+    400102: R_Ring
+    400104: R_Shoulder
+    400106: R_shoulder
+    400108: R_Thigh
+    400110: R_Thumb
+    400112: R_Toe
+    400114: R_wrist
+    400116: Root
+    400118: Stomach
+    400120: transform3
+    4300000: Astro_Mesh
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Astro_Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,112 @@
+{
+  "name": "START",
+  "type": "SEQUENCE",
+  "children": [
+    {
+      "name": "RescueAttempt",
+      "type": "SCENE",
+      "sceneName": "RescueAttempt"
+    },
+    {
+      "name": "ThankGod",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_ThankGod",
+      "startDelay": "0",
+      "looping": false,
+      "subtitles": "Thank god, I wasnâ€™t sure you would make it.",
+      "character": "Nick"
+    },
+    {
+      "name": "WhatDoYouMean",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_WhatDoYouMean",
+      "startDelay": "0",
+      "looping": false,
+      "subtitles": "What do you mean? I meanâ€¦ I donâ€™t hate you that muchâ€¦",
+      "character": "Jess"
+    },
+    {
+      "name": "HoldOffOnTheJokes",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_HoldOffOnTheJokes",
+      "startDelay": "0",
+      "looping": false,
+      "subtitles": "Haâ€¦ haâ€¦ this isnâ€™t over yetâ€¦ maybe hold off on the jokes until weâ€™ve landed.",
+      "character": "Nick"
+    },
+    {
+      "name": "FairEnough",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_FairEnough",
+      "startDelay": "0",
+      "looping": false,
+      "subtitles": "Fair enough.",
+      "character": "Jess"
+    },
+    {
+      "name": "NowLetsGet",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_NowLetsGet",
+      "startDelay": "0",
+      "looping": false,
+      "subtitles": "Now, letâ€™s get out of here.",
+      "character": "Jess"
+    },
+    {
+      "name": "RunningTimeSel",
+      "type": "SELECTOR",
+      "children": [
+        {
+          "name": "RunningTimeIfSeq",
+          "type": "SEQUENCE",
+          "children": [
+            {
+              "name": "RescueLowOnTime",
+              "type": "CONDITION",
+              "condition": "Rescue Low",
+              "isDialogueCondition": false,
+              "isAgitated": false
+            },
+            {
+              "name": "RescueLowOnTimeAns",
+              "type": "SEQUENCE",
+              "children": [
+                {
+                  "name": "WereRunningOut",
+                  "type": "DIALOGUE",
+                  "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_WereRunningOut",
+                  "startDelay": "0",
+                  "looping": false,
+                  "subtitles": "Now, letâ€™s get out of here.",
+                  "character": "Nick"
+                },
+                {
+                  "name": "NotHelping",
+                  "type": "DIALOGUE",
+                  "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_NotHelping",
+                  "startDelay": "0",
+                  "looping": false,
+                  "subtitles": "You're not helping.",
+                  "character": "Jess"
+                },
+                {
+                  "name": "FastAsICan",
+                  "type": "DIALOGUE",
+                  "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_FastAsICan",
+                  "startDelay": "1",
+                  "looping": false,
+                  "subtitles": "Iâ€™m going as fast as I can.",
+                  "character": "Jess"
+                },
+                {
+                  "name": "NoMoreDialogue",
+                  "type": "SEQUENCE"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

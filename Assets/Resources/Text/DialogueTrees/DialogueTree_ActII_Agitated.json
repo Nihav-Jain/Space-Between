@@ -1,0 +1,225 @@
+{
+  "name": "START",
+  "type": "SEQUENCE",
+  "children": [
+    {
+      "name": "Agitated",
+      "type": "SCENE",
+      "sceneName": "Agitated"
+    },
+    {
+      "name": "isAgitated",
+      "type": "CONDITION",
+      "condition": "",
+      "isDialogueCondition": false,
+      "isAgitated": true
+    },
+    {
+      "name": "WorkingOnIt",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_WorkingOnIt",
+      "startDelay": "0",
+      "looping": false,
+      "subtitles": "I’m working on it!",
+      "character": "Jess"
+    },
+    {
+      "name": "WorkFaster",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_WorkFaster",
+      "startDelay": "0",
+      "looping": false,
+      "subtitles": "Well work faster!",
+      "character": "Nick"
+    },
+    {
+      "name": "CalmDown",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_CalmDown",
+      "startDelay": "0",
+      "looping": false,
+      "subtitles": "Calm down! You’re using up too much oxygen!",
+      "character": "Jess"
+    },
+    {
+      "name": "WhyDoYouThink",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_WhyDoYouThink",
+      "startDelay": "0",
+      "looping": false,
+      "subtitles": "Why do you think I’m upset? Running out of oxygen is the inevitable result of you not finding the escape pod!",
+      "character": "Nick"
+    },
+    {
+      "name": "MissingThePoint",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_MissingThePoint",
+      "startDelay": "0",
+      "looping": false,
+      "subtitles": "You’re missing the point. Even if I find the escape pod, it won’t matter if you are dead!",
+      "character": "Jess"
+    },
+    {
+      "name": "CantBelieveThisIsHappening",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_CantBelieveThisIsHappening",
+      "startDelay": "0",
+      "looping": false,
+      "subtitles": "Fine… Sorry… I just can’t believe this is happening. We might die out here.",
+      "character": "Nick"
+    },
+    {
+      "name": "NoLongerAgitated",
+      "type": "CONDITION",
+      "condition": "",
+      "isDialogueCondition": false,
+      "isAgitated": false
+    },
+    {
+      "name": "AgitatedResponse",
+      "type": "SELECTOR",
+      "children": [
+        {
+          "name": "AgitatedResponseIfSeq",
+          "type": "SEQUENCE",
+          "children": [
+            {
+              "name": "AgitatedResponseOptions",
+              "type": "CONDITION",
+              "condition": "Agitated Response?",
+              "isDialogueCondition": false,
+              "isAgitated": false
+            },
+            {
+              "name": "AgitatedResponseAns",
+              "type": "SEQUENCE",
+              "children": [
+                {
+                  "name": "AgitatedResponseOption1",
+                  "type": "SELECTOR",
+                  "children": [
+                    {
+                      "name": "AgitatedResponseOption1Seq",
+                      "type": "SEQUENCE",
+                      "children": [
+                        {
+                          "name": "AgitatedResponseOption1",
+                          "type": "CONDITION",
+                          "condition": "Wigging Out",
+                          "isDialogueCondition": false,
+                          "isAgitated": false
+                        },
+                        {
+                          "name": "WiggingOut",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_WiggingOut",
+                          "startDelay": "0",
+                          "looping": false,
+                          "subtitles": "Yes, and wigging out makes that more likely.",
+                          "character": "Jess"
+                        },
+                        {
+                          "name": "OkNick",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_OkNick",
+                          "startDelay": "0",
+                          "looping": false,
+                          "subtitles": "Okay, Nick… stay calm",
+                          "character": "Nick"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "AgitatedResponseOption2",
+                  "type": "SELECTOR",
+                  "children": [
+                    {
+                      "name": "AgitatedResponseOption2Seq",
+                      "type": "SEQUENCE",
+                      "children": [
+                        {
+                          "name": "AgitatedResponseOption2",
+                          "type": "CONDITION",
+                          "condition": "Best I Can",
+                          "isDialogueCondition": false,
+                          "isAgitated": false
+                        },
+                        {
+                          "name": "DoingTheBest",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_DoingTheBest",
+                          "startDelay": "0",
+                          "looping": false,
+                          "subtitles": "It’s okay… But I’m doing the best I can.",
+                          "character": "Jess"
+                        },
+                        {
+                          "name": "ThankYouForTrying",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_ThankYouForTrying",
+                          "startDelay": "0",
+                          "looping": false,
+                          "subtitles": "Thank you for trying.",
+                          "character": "Nick"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "AgitatedResponseOption3",
+                  "type": "SELECTOR",
+                  "children": [
+                    {
+                      "name": "AgitatedResponseOption3Seq",
+                      "type": "SEQUENCE",
+                      "children": [
+                        {
+                          "name": "AgitatedResponseOption3",
+                          "type": "CONDITION",
+                          "condition": "Agitated Say Nothing",
+                          "isDialogueCondition": false,
+                          "isAgitated": false
+                        },
+                        {
+                          "name": "TrulyAmSorry",
+                          "type": "DIALOGUE",
+                          "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_TrulyAmSorry",
+                          "startDelay": "3",
+                          "looping": false,
+                          "subtitles": "I truly am sorry…",
+                          "character": "Nick"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "LookForItTogether",
+                  "type": "DIALOGUE",
+                  "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_LookForItTogether",
+                  "startDelay": "1",
+                  "looping": false,
+                  "subtitles": "Come and get me, and we can look for it together.",
+                  "character": "Nick"
+                },
+                {
+                  "name": "GoToCalmJSON",
+                  "type": "SEQUENCE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AgitatedResponseOptions",
+          "type": "OPTIONS",
+          "options": [ "Yes, and wigging out makes that more likely.", "It’s okay… But I’m doing the best I can.", "(say nothing)", "" ],
+          "successConditions": [ "Wigging Out", "Best I Can", "Agitated Say Nothing", "" ]
+        }
+      ]
+    }
+  ]
+}

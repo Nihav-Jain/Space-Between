@@ -1,0 +1,69 @@
+{
+  "name": "START",
+  "type": "SEQUENCE",
+  "children": [
+    {
+      "name": "Abandonment",
+      "type": "SCENE",
+      "sceneName": "Abandonment"
+    },
+    {
+      "name": "NoWinSituation",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_NoWinSituation",
+      "startDelay": "1",
+      "looping": false,
+      "subtitles": "I understand. Youâ€™re in a no-win situation. Iâ€™m just glad one of us can make it out alive.",
+      "character": "Nick"
+    },
+    {
+      "name": "Nick",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_Nick",
+      "startDelay": "1",
+      "looping": false,
+      "subtitles": "Nickâ€¦",
+      "character": "Jess"
+    },
+    {
+      "name": "TellMyFamily",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_TellMyFamily",
+      "startDelay": "1",
+      "looping": false,
+      "subtitles": "Pleaseâ€¦ tell my family I love them.",
+      "character": "Nick"
+    },
+    {
+      "name": "IWillImSorry",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_IWillImSorry",
+      "startDelay": "1",
+      "looping": false,
+      "subtitles": "I will. Iâ€™m sorry.",
+      "character": "Nick"
+    },
+    {
+      "name": "GoodbyeJess",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_GoodbyeJess",
+      "startDelay": "1",
+      "looping": false,
+      "subtitles": "Get to the pod. Youâ€™re running out of time... Good bye, Jess.",
+      "character": "Nick"
+    },
+    {
+      "name": "GoodbyeNick",
+      "type": "DIALOGUE",
+      "audioFile": "Assets/Resources/Audio/Dialogue/Scene02_GoodbyeNick",
+      "startDelay": "1",
+      "looping": false,
+      "subtitles": "Good bye, Nick.",
+      "character": "Jess"
+    },
+    {
+      "name": "EndOfDialogue",
+      "type": "SEQUENCE"
+    }
+  ]
+}
